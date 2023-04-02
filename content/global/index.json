@@ -1,33 +1,19 @@
 {
   "header": {
-    "name": "Tina Starter",
     "icon": {
       "color": "orange",
-      "style": "float",
-      "name": "Tina"
+      "style": "float"
     },
+    "name": "",
     "color": "default",
-    "nav": [
-      {
-        "href": "",
-        "label": "Home"
-      },
-      {
-        "href": "about",
-        "label": "About"
-      },
-      {
-        "href": "posts",
-        "label": "Blog"
-      }
-    ]
+    "nav": []
   },
   "footer": {
     "color": "default",
     "social": {
-      "facebook": "/",
-      "twitter": "/",
-      "instagram": "/"
+      "facebook": "",
+      "twitter": "",
+      "instagram": ""
     }
   },
   "theme": {

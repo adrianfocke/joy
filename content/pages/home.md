@@ -1,53 +1,84 @@
 ---
-title: Tina Cloud Starter
+title: Joy Art
 blocks:
-  - headline: Welcome to the Tina Starter
-    text: >
-      This project is set up to show you the basics of working with Tina. You're
-      looking at the landing page, which pulls content from
-      `content/pages/home.md`, components from components/blocks, and puts them
-      all together in `pages/[filename].tsx`, all based on a config
-      `tina/config.tsx`.
+  - headline: 'JOY ART – ABSTRAKTER EMOTIONALISMUS '
+    text: ''
     actions:
-      - label: Get Started
-        type: button
-        icon: true
-        link: /posts
-      - label: Read Blog
+      - label: Instagram
         type: link
-        icon: false
-        link: /posts
+        icon: true
+        link: 'https://www.instagram.com/joy9.art/'
+      - label: Vita
+        type: link
+        icon: true
+        link: '#test'
     image:
-      src: /uploads/unsplash-75EFpyXu3Wg.jpg
-      alt: >-
-        Photo of palm trees at sunset by Adam Birkett -
-        unsplash.com/photos/75EFpyXu3Wg
+      src: /uploads/hero-min.png
+      alt: An image depicting joy with blurred violet spheres around
     color: default
     _template: hero
   - items:
       - icon:
-          name: BiCodeBlock
           color: red
           style: float
-        title: Amazing Feature
-        text: >-
-          Aliquam blandit felis rhoncus, eleifend ipsum in, condimentum nibh.
-          Praesent ac faucibus risus, eu lacinia enim.
+        title: ÖFFENTLICHE SAMMLUNGEN
+        text: |-
+          2003 Museum Art of American Miami, Florida
+          2005 Otto Wagner- Galerie Vienna
       - icon:
-          name: BiLike
           color: primary
           style: float
-        title: This Is a Feature
-        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.
+        title: AUSSTELLUNGEN WELTWEIT
+        text: >-
+          ÖSTERREICH, SCHWEIZ, SPANIEN, UNGARN, MIAMI FLORIDA, DEUTSCHLAND,
+          ITALIEN, ABU DHABI
       - icon:
-          name: BiPalette
           color: green
           style: float
-        title: Configurable Theme
-        text: >-
-          Edit global theme configuration with Tina. Change your theme's primary
-          color, font, or icon set.
+        title: INTERNATIONALE KUNSTMESSEN
+        text: |-
+          2003 ART – International Zürich
+
+          2003 ART – International Salzburg
+
+          2004 ART – International Frankfurt
+
+          2005 ART – Sevilla Spanien
+
+          2005 ART – Ferrara Italien
+
+          2005 ART – Klagenfurt
+
+          2006 ART – Klagenfurt
     color: tint
     _template: features
+  - body: |
+      DAS WAGNIS IST DIE EINZIGE GARANTIE FÜR DIE WAHRE LEBENDIGKEIT – Osho
+    color: default
+    _template: content
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
