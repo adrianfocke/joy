@@ -19,13 +19,15 @@ export const Hero = ({ data, parentField }) => {
     yellow: "from-yellow-400 to-yellow-600",
   };
 
+  console.log("AAA", data.color)
+
   return (
     <Section color={data.color}>
       <Container
         size="large"
-        className="grid grid-cols-1 lg:grid-cols-5 gap-14 items-center justify-center"
+        className="grid grid-cols-1 gap-x-0 gap-y-14 items-center justify-center"
       >
-        <div className="row-start-2 lg:row-start-1 lg:col-span-3 text-center lg:text-left">
+        <div className="row-start-2 lg:col-span-3 text-center lg:text-left">
           {data.tagline && (
             <h2
               data-tinafield={`${parentField}.tagline`}
@@ -38,7 +40,7 @@ export const Hero = ({ data, parentField }) => {
           {data.headline && (
             <h3
               data-tinafield={`${parentField}.headline`}
-              className={`w-full relative	mb-10 text-5xl font-extrabold tracking-normal leading-tight title-font`}
+              className={`w-full relative text-center	mb-10 text-5xl font-bold tracking-normal leading-tight title-font`}
             >
               <span
                 className={`bg-clip-text text-transparent bg-gradient-to-r  ${
@@ -54,7 +56,7 @@ export const Hero = ({ data, parentField }) => {
           {data.text && (
             <div
               data-tinafield={`${parentField}.text`}
-              className={`prose prose-lg mx-auto lg:mx-0 mb-10 ${
+              className={`prose prose-lg mx-auto ${
                 data.color === "primary" ? `prose-primary` : `dark:prose-dark`
               }`}
             >
@@ -64,7 +66,7 @@ export const Hero = ({ data, parentField }) => {
           {data.actions && (
             <Actions
               parentField={`${parentField}.actions`}
-              className="justify-center lg:justify-start py-2"
+              className="justify-center py-2"
               parentColor={data.color}
               actions={data.actions}
             />
@@ -73,15 +75,15 @@ export const Hero = ({ data, parentField }) => {
         {data.image && (
           <div
             data-tinafield={`${parentField}.image`}
-            className="relative row-start-1 lg:col-span-2 flex justify-center"
+            className="relative row-start-1 flex justify-center"
           >
             <img
-              className="absolute w-full rounded-lg max-w-xs lg:max-w-none h-auto blur-2xl brightness-150 contrast-[0.9] dark:brightness-150 saturate-200 opacity-50 dark:opacity-30 mix-blend-multiply dark:mix-blend-hard-light"
+              className="absolute w-full rounded-lg max-w-3xl h-auto blur-2xl brightness-150 contrast-[0.9] dark:brightness-150 saturate-200 opacity-50 dark:opacity-30 mix-blend-multiply dark:mix-blend-hard-light"
               src={data.image.src}
               aria-hidden="true"
             />
             <img
-              className="relative z-10 w-full max-w-xs rounded-lg lg:max-w-none h-auto"
+              className="relative z-10 w-full max-w-3xl rounded-lg h-auto"
               alt={data.image.alt}
               src={data.image.src}
             />

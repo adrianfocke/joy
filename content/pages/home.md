@@ -11,9 +11,9 @@ blocks:
       - label: Vita
         type: link
         icon: true
-        link: '#test'
+        link: '#vita'
     image:
-      src: /uploads/hero-min.png
+      src: /uploads/joy-min.JPG
       alt: An image depicting joy with blurred violet spheres around
     color: default
     _template: hero
@@ -57,6 +57,8 @@ blocks:
     color: default
     _template: content
 ---
+
+
 
 
 

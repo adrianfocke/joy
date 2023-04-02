@@ -21,7 +21,7 @@ export const Feature = ({ featuresColor, data, tinaField }) => {
       {data.title && (
         <h3
           data-tinafield={`${tinaField}.title`}
-          className="text-2xl font-semibold title-font"
+          className="text-1xl font-semibold title-font"
         >
           {data.title}
         </h3>
@@ -29,7 +29,7 @@ export const Feature = ({ featuresColor, data, tinaField }) => {
       {data.text && (
         <p
           data-tinafield={`${tinaField}.text`}
-          className="text-base opacity-80 leading-relaxed"
+          className="text-xs opacity-80 leading-relaxed"
         >
           {data.text}
         </p>
@@ -42,6 +42,7 @@ export const Feature = ({ featuresColor, data, tinaField }) => {
 export const Features = ({ data, parentField }) => {
   return (
     <Section color={data.color}>
+      <div id="vita">
       <Container
         className={`flex flex-wrap gap-x-10 gap-y-8 text-left`}
         size="large"
@@ -58,6 +59,7 @@ export const Features = ({ data, parentField }) => {
             );
           })}
       </Container>
+      </div>
     </Section>
   );
 };
