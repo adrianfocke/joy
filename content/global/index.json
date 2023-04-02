@@ -6,7 +6,12 @@
     },
     "name": "",
     "color": "default",
-    "nav": []
+    "nav": [
+      {
+        "href": "about",
+        "label": "Imprint"
+      }
+    ]
   },
   "footer": {
     "color": "default",
