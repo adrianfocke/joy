@@ -44,11 +44,11 @@ export const Layout = ({ rawData = {}, data = layoutData, children }) => {
             {children}
           </div>
           <Header data={data?.header} />
-          <Footer
+          {/* <Footer
             rawData={rawData}
             data={data?.footer}
             icon={data?.header.icon}
-          />
+          /> */}
         </div>
       </Theme>
     </>
