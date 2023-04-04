@@ -19,8 +19,6 @@ export const Hero = ({ data, parentField }) => {
     yellow: "from-yellow-400 to-yellow-600",
   };
 
-  console.log("AAA", data.color)
-
   return (
     <Section color={data.color}>
       <Container
@@ -40,7 +38,7 @@ export const Hero = ({ data, parentField }) => {
           {data.headline && (
             <h3
               data-tinafield={`${parentField}.headline`}
-              className={`w-full relative text-center	mb-10 text-5xl font-bold tracking-normal leading-tight title-font`}
+              className={`w-full relative text-center break-words	mb-10 text-5xl font-bold tracking-normal leading-tight title-font`}
             >
               <span
                 className={`bg-clip-text text-transparent bg-gradient-to-r  ${
